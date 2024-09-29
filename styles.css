@@ -1,0 +1,85 @@
+body {
+    background-color: white; /* Set the white background */
+    background-image: url('res/dots_vector.svg'); /* Path to your PNG */
+    background-repeat: repeat; /* Repeats the dots background */
+    background-size:30%; /* Keep the default size of the PNG */
+    background-position: center; /* Centers the PNG pattern */
+    font-family: "Montserrat";
+}
+
+/* Make sure the body takes the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the top half of the screen */
+.half-screen {
+    background-color: #89cbd9; /* Blue background color */
+    height: 70vh; /* 50% of the viewport height (vh) */
+    color: white; /* White text color for contrast */
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+/* Styling for the bottom half or other content */
+.content {
+    height: 30vh; /* The other half of the viewport height */
+    text-align: center; /* Center the content horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.logo {
+    height: 50vh;
+    max-width: 90vw;
+    margin-bottom: 2vh;
+}
+
+.icon {
+    height: 8vh;
+    margin-bottom: 1vh;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack logo and address vertically */
+    align-items: center; /* Center horizontally */
+}
+
+/* Address section styling */
+.address {
+    display: flex; 
+    flex-direction: column;/* Place icon and text side-by-side */
+    align-items: center; /* Align icon and text vertically */
+    color: white; /* Text color for the address */
+    font-weight: 700;
+}
+
+.address span {
+    font-size: 3.5vh; /* Adjust text size for address */
+    color: white; /* Ensure text is visible on blue background */
+}
+
+/* Styling for the Coming Soon text box */
+.coming-soon-box {
+    background-color: #e0faff; /* Background color of the text box */
+    border-radius: 10px; /* Rounded corners */
+    width:fit-content;
+    align-items: center;
+
+}
+
+/* Style for the Coming Soon text */
+.coming-soon-box h2 {
+    color: #0b8fac; /* Text color */
+    margin: 0; /* Remove margin for the heading */
+    font-size: 3vh; /* Font size for the "Coming Soon!" text */
+    font-weight: 700;
+    padding: 1vh 1vw; /* Add padding inside the text box for spacing */
+    display: inline-block; /* Ensure the background fits tightly around the text */
+}
