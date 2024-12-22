@@ -1,0 +1,2 @@
+main_blue = #89cbd9
+light_blue = #89cad93c
