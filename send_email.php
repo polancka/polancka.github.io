@@ -1,51 +1,35 @@
 <?php
-$errors = [];
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get POST data
-    $name = isset($_POST['name']) ? strip_tags(trim($_POST['name'])) : '';
-    $email = isset($_POST['email']) ? trim($_POST['email']) : '';
-    $message = isset($_POST['message']) ? strip_tags(trim($_POST['message'])) : '';
+$env = parse_ini_file('.env');
+$password = $env["PASSWORD"];
+$my_email = $env["EMAIL"];
 
-    // Validate form fields
-    if (empty($name)) {
-        $errors[] = 'Name is empty';
-    }
+$name = $_POST["name"];
+$email = $_POST["email"];
+$message = $_POST["message"];
 
-    if (empty($email)) {
-        $errors[] = 'Email is empty';
-    } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $errors[] = 'Email is invalid';
-    }
+require "vendor/autoload.php";
 
-    if (empty($message)) {
-        $errors[] = 'Message is empty';
-    }
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 
-    // If no errors, send email
-    if (empty($errors)) {
-        // Recipient email address (replace with your own)
-        $recipient = "recipient@example.com";
+$mail = new PHPMailer(true);
 
-        // Additional headers
-        $headers = "From: $name <$email>";
+$mail->isSMTP();
+$mail->SMTPAuth = true;
 
-        // Send email
-        if (mail($recipient, $message, $headers)) {
-            echo "Email sent successfully!";
-        } else {
-            echo "Failed to send email. Please try again later.";
-        }
-    } else {
-        // Display errors
-        echo "The form contains the following errors:<br>";
-        foreach ($errors as $error) {
-            echo "- $error<br>";
-        }
-    }
-} else {
-    // Not a POST request, display a 403 forbidden error
-    header("HTTP/1.1 403 Forbidden");
-    echo "You are not allowed to access this page.";
-}
-?>
+$mail->Host = "mail.smtp2go.com";
+$mail->SMTPSecure = 'tls';
+$mail->Port = 2525;
+
+$mail->Username = $my_email;
+$mail->Password = $password;
+
+$mail->setFrom($email, $name);
+$mail->addAddress("info@dialogo.si", "Eva");
+
+$mail->Body = $message;
+
+$mail->send();
+
+header("Location: sent.html");
