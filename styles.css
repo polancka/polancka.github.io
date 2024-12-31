@@ -26,11 +26,13 @@ html, body {
 
 /* Styling for the bottom half or other content */
 .content {
-    height: 30vh; /* The other half of the viewport height */
+    height: 20vh; /* The other half of the viewport height */
     text-align: center; /* Center the content horizontally */
-    display: flex;
+
     align-items: center;
     justify-content: center;
+    max-width: 80vw;
+    margin: auto;
     
 }
 
@@ -74,12 +76,82 @@ html, body {
 
 }
 
-/* Style for the Coming Soon text */
-.coming-soon-box h2 {
+.coming-soon-box-opis {
+    background-color: #e0faff; /* Background color of the text box */
+    border-radius: 10px; /* Rounded corners */
+    width:fit-content;
+    align-items: center;
+    text-align: center;
+    padding: 4vh 10vw;
+
+    
+}
+
+
+
+.bumper {
+    height: 5vh;
+}
+
+.container-header-blue {
+    background-color: #89cbd9;
+    height: 80vh;
+    color: white;
+}
+
+.container-footer {
+    background-color: #89cbd9;
+    height: 10vh;
+    color: white;
+
+}
+
+.container-opis {
+    background-color: #e0faff; /* Background color of the text box */
+    border-radius: 10px; /* Rounded corners */
+    width:fit-content;
+    align-items: center;
+    text-align: center;
+    padding: 4vh 20vw;
+
+}
+
+.container-opis h4 {
     color: #0b8fac; /* Text color */
     margin: 0; /* Remove margin for the heading */
-    font-size: 3vh; /* Font size for the "Coming Soon!" text */
-    font-weight: 700;
+    font-weight: 500;
     padding: 1vh 1vw; /* Add padding inside the text box for spacing */
-    display: inline-block; /* Ensure the background fits tightly around the text */
+
+}
+
+.container-opis h3 {
+    color: #0b8fac; /* Text color */
+    margin: 0; /* Remove margin for the heading */
+    font-weight: 500;
+    padding: 1vh 3vw; /* Add padding inside the text box for spacing */
+
+}
+
+.container-opis h5 { 
+    font-weight: 300;
+    padding: 1vh 3vw; /* Add padding inside the text box for spacing */
+    text-align: justify;
+
+}
+
+.container-white {
+    background-color: white;
+
+}
+
+.container-white h5{
+    line-height: 1.5;
+
+}
+
+
+
+
+.container-bumper {
+    height: 3vh;
 }
