@@ -132,10 +132,10 @@ html, body {
 
 }
 
-.container-opis h5 { 
+.container-opis h6 { 
     font-weight: 300;
     padding: 1vh 3vw; /* Add padding inside the text box for spacing */
-    text-align: justify;
+    text-align: center;
 
 }
 
