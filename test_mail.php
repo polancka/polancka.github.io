@@ -15,7 +15,7 @@ $mail->Port = 587; // Port used by Mailtrap
 $mail->setFrom('info@dialogo.si', 'First Last');
 $mail->addAddress('info@dialogo.si', 'John Doe');
 
-$mail->Body = 'Mail body in HTML';
+$mail->Body = 'To je testni mail iz php testne skripte';
 
 
 if(!$mail->send()){
@@ -26,4 +26,6 @@ if(!$mail->send()){
 }
 
 // SMTP Debugging levels
-$mail->SMTPDebug = 2; // Includes both client and server messages. Adjust as needed for your testing.
+$mail->SMTPDebug = 2; // Includes both client and server messages. Adjust
+
+//method="post" action="send_email.php"
