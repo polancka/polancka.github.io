@@ -198,7 +198,7 @@ html, body {
     transform: translateY(50px); /* Move down by 50px */
     transition: opacity 1s ease-out, transform 0.5s ease-out;
     flex: 1;
-    min-height: 30vh;
+    min-height: 20vh;
     background-color: white;
     border: 1px solid #ddd;
     display: flex;
@@ -225,22 +225,22 @@ html, body {
 
 .service-description {
     margin-top: 30px;
-    padding: 2vh 3vw;
+    padding: 2vh 2vw;
     background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
     text-align: justify;
 }
 
 .service-title{
-    font-size: large;
+    font-size: 2vh;
+    font-weight: 500;
 }
 .service-title:hover{
     font-weight: 600;
 }
 
 .inner-title{
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 2vh;
 }
 
 
