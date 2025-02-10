@@ -8,7 +8,9 @@
     <meta name="description" content="Zasebna logopedska svetovalnica na Vranskem.">
     <link rel="icon" type="image/x-icon" href="/res/mini-cloud.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     
 </head>
@@ -19,11 +21,19 @@
         <div class="container container-bumper"></div>
         <div class="container container-bumper"></div>     
         <div class="container container-bumper"></div>  
-        <div class="container container-bumper"></div>   
+        <div class="container container-mini-bumper"></div>  
+     
+        <div class="container container-bumper"></div>  
         <img src="res/logo_final.svg"  class = "logo" alt="Responsive image">
+        <div class="container container-mini-bumper"></div>  
+    
+     
+ 
+
         <h5>Zasebna logopedska svetovalnica</h5>
         <h6>Čeplje, Vransko</h6>
         <h6>info@dialogo.si</h6>
+        <div class="container container-bumper"></div>  
     </div>
 
     <div class="container container-bumper"></div>
@@ -33,13 +43,13 @@
 
     <div class="container container-bumper"></div>
 
-    <div class="container-fluid container-opis">
+    <div class="container-fluid container-opis-mini">
         <div class="container container-podlaga">
             <ul class="nav navbar justify-content-around">
-                <a class="col-12 col-md-2 nav-item p-4" href="#odialogu">O Dialogu</a>
-                <a class="col-12 col-md-2 nav-item p-4 " href="#storitve">Storitve</a>
-                <a class="col-12 col-md-2 nav-item p-4" href="#cenik">Cenik</a>
-                <a class="col-12 col-md-2 nav-item p-4" href="#narocanje">Naročanje</a>
+                <a class="col-12 col-md-2 nav-item p-2" href="#odialogu">O Dialogu</a>
+                <a class="col-12 col-md-2 nav-item p-2 " href="#storitve">Storitve</a>
+                <a class="col-12 col-md-2 nav-item p-2" href="#cenik">Cenik</a>
+                <a class="col-12 col-md-2 nav-item p-2" href="#narocanje">Naročanje</a>
             </ul>
         </div>
     </div>
@@ -70,13 +80,15 @@
     <div class="container container-bumper" id="storitve"></div>
     <div class="container p-8 container-opis text-center">
         <h3>STORITVE</h3>
-        <div class="container py-5">
+        <div class="container-bumper"></div>
+        <div class="container p-2">
             <div class="row g-4">
                 <!-- Service 1 -->
                 <div class="col-md-4">
                     <div class="service-box text-center" onclick="showDescription(1)">
                         <div id="service-1-title" class="service-title">PRVI PREGLED S SVETOVANJEM</div>
                         <div id="service-1-desc" class="d-none">
+                            <div class="container-bumper"></div>
                             <p class="inner-title">PRVI PREGLED S SVETOVANJEM</p>
                             <p class="service-description">Uvodno srečanje traja 50 minut in zajema spoznavanje, diagnostični razgovor s starši, oceno otrokovega govorno-jezikovnega razvoja ter svetovanje glede spodbujanja le-tega v domačem okolju. <br> <br>V kolikor se po uvodnem srečanju odločite za vključitev v logopedsko obravnavo, skupaj oblikujemo načrt dela - določimo skupne cilje ter potek nadaljnih obravnav. </p>
                         </div>
@@ -87,6 +99,7 @@
                     <div class="service-box" onclick="showDescription(2)">
                         <div id="service-2-title" class="service-title"> KRAJŠA LOGOPEDSKA OBRAVNAVA</div>
                         <div id="service-2-desc" class="d-none">
+                            <div class="container-bumper"></div>
                             <p class="inner-title">KRAJŠA LOGOPEDSKA OBRAVNAVA</p>
                             <p class="service-description">Krajša logopedska obravnava je namenjena otrokom po opravljenem prvem pregledu, ki so vključeni v redno obravnavo artikulacijskih motenj. Po potrebi se za krajšo logopedsko obravnavo dogovorimo tudi v drugih primerih. 
                                 <br> <br> Obsega kratko obnovitev materiala predhodnih terminov, sprotno oceno otrokovega napredka ter različne strategije za doseganje ciljev, zastavljenih na uvodnem srečanju. 
@@ -99,6 +112,7 @@
                     <div class="service-box" onclick="showDescription(3)">
                         <div id="service-3-title" class="service-title">DALJŠA LOGOPEDSKA OBRAVNAVA</div>
                         <div id="service-3-desc" class="d-none">
+                            <div class="container-bumper"></div>
                             <p class="inner-title">DALJŠA LOGOPEDSKA OBRAVNAVA</p>
                             <p class="service-description">Daljša logopedska obravnava je namenjena otrokom po opravljenem prvem pregledu. <br> <br> Obsega kratko obnovitev materiala predhodnih terminov, sprotno oceno otrokovega napredka ter različne strategije za doseganje ciljev, zastavljenih na uvodnem srečanju.
                                  Ob vsakem terminu prejmete tudi material za domače delo s personaliziranimi navodili.</p>
@@ -112,23 +126,26 @@
     </div>
 
     <div class="container container-bumper" id ="cenik"></div>
-    <div class="container p-8 container-opis text-center">
+    <div class="container p-2 container-opis text-center">
         <div class="row">
+            <div class="container-bumper"></div>
             <div class="col-12">
                 <img src="res/cenik_vector.svg" class ="smallimg">
             </div>
             <div class="col-2"></div>
             <div class="container p-8 container-opis text-center">
                 <h3>CENIK</h3>
-                <div class="container py-5">
+                <div class="container-bumper"></div>
+                <div class="container p-2">
                     <div class="row g-4">
                         <!-- Service 1 -->
                         <div class="col-md-4">
                             <div class="service-box text-center" onclick="showPrice(4)">
                                 <div id="service-4-title" class="service-title">PRVI PREGLED S SVETOVANJEM</div>
                                 <div id="service-4-desc" class="d-none">
+                                    <div class="container-bumper"></div>
                                     <p class="inner-title">PRVI PREGLED S SVETOVANJEM</p>
-                                    <p class="price-description"> 50 min <br> 60 € </p>
+                                    <p class="price-description"> 50 minut <br> 60 € </p>
                                 </div>
                             </div>
                         </div>
@@ -137,8 +154,9 @@
                             <div class="service-box" onclick="showPrice(5)">
                                 <div id="service-5-title" class="service-title"> KRAJŠA LOGOPEDSKA OBRAVNAVA</div>
                                 <div id="service-5-desc" class="d-none">
+                                    <div class="container-bumper"></div>
                                     <p class="inner-title">KRAJŠA LOGOPEDSKA OBRAVNAVA</p>
-                                    <p class="price-description"> 30 min <br> 40 € </p>	
+                                    <p class="price-description"> 30 minut <br> 40 € </p>	
                                 </div>
                             </div>
                         </div>
@@ -147,8 +165,9 @@
                             <div class="service-box" onclick="showPrice(6)">
                                 <div id="service-6-title" class="service-title">DALJŠA LOGOPEDSKA OBRAVNAVA</div>
                                 <div id="service-6-desc" class="d-none">
+                                    <div class="container-bumper"></div>
                                     <p class="inner-title">DALJŠA LOGOPEDSKA OBRAVNAVA</p>
-                                    <p class="price-description"> 45 min <br> 50 € </p>
+                                    <p class="price-description"> 45 minut<br> 50 € </p>
                                 </div>
                             </div>
                         </div>
@@ -166,9 +185,10 @@
     <div class="container container-bumper" id = "narocanje"></div>
     <div class="container p-8 container-opis text-center">
         <h3 class="col-12">NAROČANJE</h3>
-        <div class="container container-bumper"></div>
+ 
         <div class="container container-bumper"></div>
         <div class="col-12 p-2 container-white">Za naročanje nam pišite na info@dialogo.si</div>
+        <div class="container container-mini-bumper"></div>
         <!--
         <div class="col-12 p-2 container-white">Za naročanje izpolnite spodnji obrazec:</div>
         <div class="container container-mini-bumper"></div>
@@ -239,14 +259,15 @@
 
     <div class="container container-bumper"></div>
     <div class="container-fluid p-8 container-footer text-center">
-        <div class="container container-mini-bumper"></div>
+        <div class="container container-bumper"></div>
         <h3>Kje nas najdete? </h3>
-        <div class="container container-mini-bumper"></div>
+        <div class="container container-bumper"></div>
         <div class="embed-responsive container-map">
             <iframe class="my-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d689.7639099246312!2d14.977395795285704!3d46.249121681578394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476543880cd92899%3A0xc549b0734f33d953!2sSoseska%20Grofice!5e0!3m2!1ssl!2ssi!4v1736961166126!5m2!1ssl!2ssi" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="container container-mini-bumper"></div>
+        <div class="container container-bumper"></div>
         <h3>Čeplje 70D, Vransko </h3>  
+        <div class="container container-bumper"></div>
     </div>
 
 
