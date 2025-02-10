@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dialog logopedija Vransko</title>
     <meta name="description" content="Zasebna logopedska svetovalnica na Vranskem.">
@@ -13,11 +13,14 @@
     
 </head>
 <body>
-    <div class ="container-fluid container-header-blue col-lg-12  text-center ">
-        <img src="res/logo_vector.svg"  class = "logo" alt="Responsive image">
+
+    <div class ="container-fluid container-header-blue text-center p-8 ">
         <div class="container container-bumper"></div>
         <div class="container container-bumper"></div>
-        <div class="container container-bumper"></div>
+        <div class="container container-bumper"></div>     
+        <div class="container container-bumper"></div>  
+        <div class="container container-bumper"></div>   
+        <img src="res/logo_final.svg"  class = "logo" alt="Responsive image">
         <h5>Zasebna logopedska svetovalnica</h5>
         <h6>Čeplje, Vransko</h6>
         <h6>info@dialogo.si</h6>
@@ -59,7 +62,7 @@
         <div class="container container-bumper"></div>
 
         <div class="col-12 text ">
-            <img src="res/o_dialogu_vector.svg">
+            <img src="res/o_dialogu_vector.svg" class ="smallimg">
         </div>
     </div>
 
@@ -109,65 +112,56 @@
     </div>
 
     <div class="container container-bumper" id ="cenik"></div>
-
     <div class="container p-8 container-opis text-center">
         <div class="row">
             <div class="col-12">
-                <img src="res/cenik_vector.svg">
+                <img src="res/cenik_vector.svg" class ="smallimg">
             </div>
             <div class="col-2"></div>
-            <div class="col-8">
-                <div class="container container-bumper"></div>
+            <div class="container p-8 container-opis text-center">
                 <h3>CENIK</h3>
-                
-                <div class="container container-bumper"></div>
-                <div class="container container-bumper"></div>
-                <div class ="p-2 container-white cenik-row">
-                    <div class ="row">
-                        <div class="col-12 col-md-6 text-md-start ">
-                            <strong>PRVI PREGLED S SVETOVANJEM</strong>
+                <div class="container py-5">
+                    <div class="row g-4">
+                        <!-- Service 1 -->
+                        <div class="col-md-4">
+                            <div class="service-box text-center" onclick="showPrice(4)">
+                                <div id="service-4-title" class="service-title">PRVI PREGLED S SVETOVANJEM</div>
+                                <div id="service-4-desc" class="d-none">
+                                    <p class="inner-title">PRVI PREGLED S SVETOVANJEM</p>
+                                    <p class="price-description"> 50 min <br> 60 € </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-3">
-                            50 min
+                        <!-- Service 2 -->
+                        <div class="col-md-4">
+                            <div class="service-box" onclick="showPrice(5)">
+                                <div id="service-5-title" class="service-title"> KRAJŠA LOGOPEDSKA OBRAVNAVA</div>
+                                <div id="service-5-desc" class="d-none">
+                                    <p class="inner-title">KRAJŠA LOGOPEDSKA OBRAVNAVA</p>
+                                    <p class="price-description"> 30 min <br> 40 € </p>	
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-12 col-md-3">
-                            60€
-                        </div>
-                    </div>
-                </div>
-                <div class="container-mini-bumper"></div>
-                <div class ="p-2 container-white cenik-row">
-                    <div class ="row">
-                        <div class="col-12 col-md-6 text-md-start">
-                            <strong>KRAJŠA LOGOPEDSKA OBRAVNAVA</strong>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            30 min
-                        </div>
-                        <div class="col-12 col-md-3">
-                            40€
-                        </div>
-                    </div>
-                </div>
-                <div class="container-mini-bumper"></div>
-                <div class ="p-2 container-white cenik-row">
-                    <div class ="row">
-                        <div class="col-12 col-md-6 text-md-start">
-                            <strong>DALJŠA LOGOPEDSKA OBRAVNAVA</strong>
-                        </div>
-                        <div class="col-12 col-md-3">
-                            45 min
-                        </div>
-                        <div class="col-12 col-md-3">
-                            50€
+                        <!-- Service 3 -->
+                        <div class="col-md-4">
+                            <div class="service-box" onclick="showPrice(6)">
+                                <div id="service-6-title" class="service-title">DALJŠA LOGOPEDSKA OBRAVNAVA</div>
+                                <div id="service-6-desc" class="d-none">
+                                    <p class="inner-title">DALJŠA LOGOPEDSKA OBRAVNAVA</p>
+                                    <p class="price-description"> 45 min <br> 50 € </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                  </div>
             </div>
-        </div>
-        
-        
+        </div> 
     </div>
+
+    <div class="container-bumper"></div>
+
+   
 
     <div class="container container-bumper" id = "narocanje"></div>
     <div class="container p-8 container-opis text-center">
@@ -236,9 +230,9 @@
 
         <div class="container-mini-bumper"></div>
         <div class="col-12 p-2 container-white">Za določitev termina vas bomo kontaktirali najkasneje v roku dveh delovnih dni.</div>
-
-        <div class="col-12">
-            <img src="res/narocanje_new.svg">
+        <div class="container-bumper"></div>
+        <div class="text-center">
+            <img src="res/narocanje_final.svg" class ="smallimg">
         </div>
     </div>
 
@@ -255,6 +249,7 @@
         <h3>Čeplje 70D, Vransko </h3>  
     </div>
 
+
     <script>
         function showDescription(serviceNumber) {
             // Hide all descriptions
@@ -268,6 +263,20 @@
             document.getElementById(`service-${serviceNumber}-title`).classList.add('d-none');
         }
     </script>
+
+<script>
+    function showPrice(serviceNumber) {
+        // Hide all descriptions
+        for (let i = 4; i <= 6; i++) {
+            document.getElementById(`service-${i}-desc`).classList.add('d-none');
+            document.getElementById(`service-${i}-title`).classList.remove('d-none');
+        }
+        
+        // Show the selected service description
+        document.getElementById(`service-${serviceNumber}-desc`).classList.remove('d-none');
+        document.getElementById(`service-${serviceNumber}-title`).classList.add('d-none');
+    }
+</script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
