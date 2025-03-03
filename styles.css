@@ -122,7 +122,7 @@ svg text {
 .container-opis h5 { 
     font-weight: 300;
     padding: 1vh 3vw; /* Add padding inside the text box for spacing */
-    text-align: justify;
+    text-align: center;
 
 }
 
@@ -211,12 +211,13 @@ svg text {
 .service-description {
     padding: 2vh 2vw;
     background-color: white;
-    text-align: justify;
+    text-align: center;
 }
 
 .service-title{
     font-size: 2.5vh;
-    font-weight: 400;
+    font-weight: 450;
+    color: #0b8fac;
 }
 
 .service-title:hover{
@@ -224,8 +225,9 @@ svg text {
 }
 
 .inner-title{
-    font-weight: 400;
+    font-weight: 450;
     font-size: 2.5vh;
+    color: #0b8fac;
 }
 
 
